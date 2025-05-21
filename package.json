@@ -8,13 +8,13 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "npm run build --workspace @assetpack/core",
+    "build": "npm run build --workspace @superjump/assetpack-core",
     "clean": "xs clean",
     "lint:fix": "xs lint --fix",
     "prepare": "husky install",
     "prerelease": "npm run test:lint && npm run build",
-    "release": "npm run release --workspace @assetpack/core",
-    "publish-ci": "npm run publish-ci --workspace @assetpack/core",
+    "release": "npm run release --workspace @superjump/assetpack-core",
+    "publish-ci": "npm run publish-ci --workspace @superjump/assetpack-core",
     "pretest": "npm run clean",
     "test": "vitest run",
     "test:lint": "xs lint --max-warnings 0",
